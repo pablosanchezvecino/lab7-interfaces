@@ -78,7 +78,7 @@
 
 
 
-              <input type="text" class="form-control" name="promo-code" placeholder="Promo code">
+              <input type="text" class="form-control" name="promo-code" id="promo-code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
@@ -181,21 +181,24 @@
 
             <hr class="my-4">
 
-            <h4 class="mb-3">Payment</h4>
+            
 
             <div class="my-3">
-              <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Credit card</label>
-              </div>
-              <div class="form-check">
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="debit">Debit card</label>
-              </div>
-              <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">PayPal</label>
-              </div>
+              <fieldset>
+                <legend>Payment</legend>
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </fieldset>
             </div>
 
             <div class="row gy-3">
